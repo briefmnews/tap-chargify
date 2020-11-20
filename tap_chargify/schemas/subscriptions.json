@@ -508,7 +508,7 @@
             "accounting_code": {
               "type": [
                 "null",
-                "number"
+                "string"
               ]
             },
             "description": {
