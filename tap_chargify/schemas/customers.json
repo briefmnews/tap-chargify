@@ -31,7 +31,8 @@
     "reference": {
       "type": [
         "null",
-        "integer"
+        "integer",
+        "string"
       ]
     },
     "id": {

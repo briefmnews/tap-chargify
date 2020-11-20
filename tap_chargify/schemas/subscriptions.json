@@ -228,7 +228,8 @@
         "reference": {
           "type": [
             "null",
-            "number"
+            "integer",
+            "string"
           ]
         },
         "id": {
