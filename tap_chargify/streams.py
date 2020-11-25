@@ -166,12 +166,10 @@ class Statements(Stream):
     # replication_key = "updated_at"
 
 
-class Invoices(Stream):
-    name = "invoices"
+class LegacyInvoices(Stream):
+    name = "legacy_invoices"
     replication_method = "INCREMENTAL"
-    # replication_key = "updated_at"
-    replication_key = "due_date"
-    # API endpoint filters only on `due_date`.
+    replication_key = "updated_at"
 
 
 class Events(Stream):
@@ -190,6 +188,6 @@ STREAMS = {
     "subscriptions": Subscriptions,
     "transactions": Transactions,
     "statements": Statements,
-    "invoices": Invoices,
+    "legacy_invoices": LegacyInvoices,
     "events": Events
 }

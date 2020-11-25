@@ -132,7 +132,7 @@ class Chargify(object):
         yield j["statement"]
 
 
-  def invoices(self, bookmark=None):
+  def legacy_invoices(self, bookmark=None):
     start_date = utils.strptime_with_tz(bookmark).strftime('%Y-%m-%d')
     for i in self.get("invoices.json", start_date=start_date, direction="asc"):
       for j in i:
